@@ -69,6 +69,6 @@ sections:
         widgets:
           - type: gl-current-cpu
             options:
-              hostname: http:192.168.10.209:61208
+              hostname: http://idemo.inputzero.com:2812/api/3/cpu
     filteredItems:
       - *ref_0
