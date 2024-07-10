@@ -2,8 +2,10 @@ appConfig:
   theme: material
   language: en
   iconSize: large
+
 pageInfo:
   title: Dashy
+
 sections:
   - name: CMS TMS
     displayData:
@@ -22,3 +24,18 @@ sections:
         id: 0_503_server
     filteredItems:
       - *ref_0
+
+  - name: System Metrics
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    widgets:
+      - type: glances
+        options:
+          hostname: idemo.inputzero.com
+          port: 2812
+          apiVersion: 3
+          cpu: true
