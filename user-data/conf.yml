@@ -69,6 +69,7 @@ sections:
         widgets:
           - type: gl-current-cpu
             options:
+              ignoreErrors: true
               hostname: http://idemo.inputzero.com:2812
               apiVersion: 3
     filteredItems:
