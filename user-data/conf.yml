@@ -135,17 +135,17 @@ sections:
       hideForGuests: false
     items: []
     filteredItems: []
-  - name: Fusion
-    displayData:
+  - displayData:
       sortBy: default
       rows: 1
       cols: 2
-        collapsed: false
+      collapsed: false
       hideForGuests: false
     items: []
     filteredItems: []
+    name: Info
     widgets:
       - type: gl-current-cpu
         options:
-          hostname: http://idemo.inputzero.com:2812
+          hostname: http://idemo.inputzero.com:2812/
           apiVersion: 3
