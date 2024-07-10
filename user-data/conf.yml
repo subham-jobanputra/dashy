@@ -70,5 +70,6 @@ sections:
           - type: gl-current-cpu
             options:
               hostname: http://idemo.inputzero.com:2812
+              apiVersion: 3
     filteredItems:
       - *ref_0
