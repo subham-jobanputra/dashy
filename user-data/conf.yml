@@ -354,9 +354,3 @@ sections:
         options:
           hostname: http://idemo.inputzero.com:2812
           apiVersion: 3
-  - name: iDemo Alerts
-      widgets:
-        - type: gl-alerts
-          options:
-            hostname: http://idemo.inputzero.com:2812
-            apiVersion: 3
