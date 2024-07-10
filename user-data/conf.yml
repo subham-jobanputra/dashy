@@ -302,11 +302,61 @@ sections:
       collapsed: false
       hideForGuests: false
     items: []
-    filteredItems: []
-    name: Info
+    name: iDemo Metrix
     widgets:
-      - type: gl-current-cpu
+      - type: gl-cpu-speedometer
         options:
-          hostname: http://idemo.inputzero.com:2812/
+          hostname: http://idemo.inputzero.com:2812
           apiVersion: 3
         id: 0_396_glcurrentcpu
+    filteredItems: []
+  - name: iDemo Metrix
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items: []
+    filteredItems: []
+    widgets:
+      - type: gl-disk-space
+        options:
+          hostname: http://idemo.inputzero.com:2812
+          apiVersion: 3
+      - type: gl-system-load
+        options:
+          hostname: http://idemo.inputzero.com:2812
+          apiVersion: 3
+  - name: iDemo Metrix
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+    items: []
+    filteredItems: []
+    widgets:
+      - type: gl-mem-history
+        options:
+          hostname: http://idemo.inputzero.com:2812
+          apiVersion: 3
+      - type: gl-load-history
+        options:
+          hostname: http://idemo.inputzero.com:2812
+          apiVersion: 3
+      - type: gl-cpu-history
+        options:
+          hostname: http://idemo.inputzero.com:2812
+          apiVersion: 3
+      - type: gl-network-traffic
+        options:
+          hostname: http://idemo.inputzero.com:2812
+          apiVersion: 3
+  - name: iDemo Alerts
+      widgets:
+        - type: gl-alerts
+          options:
+            hostname: http://idemo.inputzero.com:2812
+            apiVersion: 3
