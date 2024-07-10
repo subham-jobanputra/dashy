@@ -48,9 +48,90 @@ pageInfo:
   title: InputZero
   navLinks: []
 sections:
-  - name: Info
-    widgets:
-      - type: gl-current-cpu
-        options:
-          hostname: http://idemo.inputzero.com:2812
-          apiVersion: 3
+  - name: Intranet
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_0
+        title: Server
+        icon: si-centos
+        url: https://intranet.inputzero.com/
+        target: newtab
+        statusCheck: true
+        id: 0_837_server
+      - &ref_1
+        title: Mysql
+        url: https://intranet.inputzero.com/db/
+        statusCheck: true
+        id: 1_837_mysql
+      - &ref_2
+        title: Cron
+        icon: fa fa-clock-rotate-left
+        url: ''
+        statusCheck: true
+        id: 2_837_cron
+      - &ref_3
+        title: Apache
+        icon: si-apache
+        statusCheck: true
+        id: 3_837_apache
+      - &ref_4
+        title: Php
+        icon: si-php
+        statusCheck: true
+        id: 4_837_php
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+      - *ref_3
+      - *ref_4
+  - name: TMS & CMS
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items: []
+    filteredItems: []
+  - name: SMS
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items: []
+    filteredItems: []
+  - name: AMS
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items: []
+    filteredItems: []
+  - name: LMS
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items: []
+    filteredItems: []
+  - name: Fusion
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items: []
+    filteredItems: []
