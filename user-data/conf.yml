@@ -70,7 +70,7 @@ sections:
         id: 1_837_mysql
       - &ref_2
         title: Cron
-        icon: fa fa-clock-rotate-left
+        icon: mdi-alien
         url: ''
         statusCheck: true
         id: 2_837_cron
@@ -135,3 +135,17 @@ sections:
       hideForGuests: false
     items: []
     filteredItems: []
+  - name: Fusion
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 2
+        collapsed: false
+      hideForGuests: false
+    items: []
+    filteredItems: []
+    widgets:
+      - type: gl-current-cpu
+        options:
+          hostname: http://idemo.inputzero.com:2812
+          apiVersion: 3
