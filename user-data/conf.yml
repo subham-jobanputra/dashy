@@ -28,7 +28,6 @@ appConfig:
     enableGuestAccess: false
     users: []
     enableOidc: false
-    oidc: {}
     enableHeaderAuth: false
     headerAuth:
       userHeader: REMOTE_USER
@@ -46,31 +45,12 @@ appConfig:
   disableSmartSort: false
   enableErrorReporting: false
 pageInfo:
-  title: 'InputZero'
+  title: InputZero
   navLinks: []
-  logo: ''
 sections:
-  - name: Idemo
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - &ref_0
-        title: Server
-        icon: si-serverless
-        url: http://idemo.inputzero.com
-        statusCheckUrl: http://idemo.inputzero.com:2812/api/3/status
-        statusCheck: true
-        id: 0_503_server
-      - &ref_1
-        widgets:
-          - type: gl-current-cpu
-            options:
-              ignoreErrors: true
-              hostname: http://idemo.inputzero.com:2812
-              apiVersion: 3
-    filteredItems:
-      - *ref_0
+  - name: Info
+    widgets:
+      - type: gl-current-cpu
+        options:
+          hostname: http://idemo.inputzero.com:2812/
+          apiVersion: 3
