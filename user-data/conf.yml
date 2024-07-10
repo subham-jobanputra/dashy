@@ -65,12 +65,13 @@ sections:
         id: 0_837_server
       - &ref_1
         title: Mysql
+        icon: si-mysql
         url: https://intranet.inputzero.com/db/
         statusCheck: true
         id: 1_837_mysql
       - &ref_2
         title: Cron
-        icon: mdi-alien
+        icon: fas fa-clock
         url: ''
         statusCheck: true
         id: 2_837_cron
@@ -97,8 +98,41 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-    items: []
-    filteredItems: []
+    items:
+      - &ref_5
+        title: Server
+        icon: si-ubuntu
+        url: http://tms.inputzero.com/
+        statusCheckUrl: ''
+        statusCheck: true
+        id: 0_573_server
+      - &ref_6
+        title: Mariadb
+        icon: si-mariadb
+        url: https://tms.inputzero.com/phpmyadmin/
+        statusCheck: true
+        id: 1_573_mariadb
+      - &ref_7
+        title: Cron
+        icon: fas fa-clock
+        statusCheck: true
+        id: 2_573_cron
+      - &ref_8
+        title: Apache
+        icon: si-apache
+        statusCheck: true
+        id: 3_573_apache
+      - &ref_9
+        title: Php
+        icon: si-php
+        statusCheck: true
+        id: 4_573_php
+    filteredItems:
+      - *ref_5
+      - *ref_6
+      - *ref_7
+      - *ref_8
+      - *ref_9
   - name: SMS
     displayData:
       sortBy: default
@@ -106,8 +140,38 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-    items: []
-    filteredItems: []
+    items:
+      - &ref_10
+        title: Server
+        icon: si-centos
+        url: https://sms.inputzero.com/
+        id: 0_243_server
+      - &ref_11
+        title: Mariadb
+        icon: si-mariadb
+        statusCheck: true
+        id: 1_243_mariadb
+      - &ref_12
+        title: Cron
+        icon: fas fa-clock
+        statusCheck: true
+        id: 2_243_cron
+      - &ref_13
+        title: Apache
+        icon: si-apache
+        statusCheck: true
+        id: 3_243_apache
+      - &ref_14
+        title: Php
+        icon: si-php
+        statusCheck: true
+        id: 4_243_php
+    filteredItems:
+      - *ref_10
+      - *ref_11
+      - *ref_12
+      - *ref_13
+      - *ref_14
   - name: AMS
     displayData:
       sortBy: default
@@ -115,8 +179,40 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-    items: []
-    filteredItems: []
+    items:
+      - &ref_15
+        title: Server
+        icon: si-centos
+        url: https://ams.inputzero.com/
+        statusCheck: true
+        id: 0_225_server
+      - &ref_16
+        title: Mysql
+        icon: si-mysql
+        url: https://ams.inputzero.com/phpmyadmin
+        statusCheck: true
+        id: 1_225_mysql
+      - &ref_17
+        title: Cron
+        icon: fas fa-clock
+        statusCheck: true
+        id: 2_225_cron
+      - &ref_18
+        title: Apache
+        icon: si-apache
+        statusCheck: true
+        id: 3_225_apache
+      - &ref_19
+        title: Php
+        icon: si-php
+        statusCheck: true
+        id: 4_225_php
+    filteredItems:
+      - *ref_15
+      - *ref_16
+      - *ref_17
+      - *ref_18
+      - *ref_19
   - name: LMS
     displayData:
       sortBy: default
@@ -124,8 +220,40 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-    items: []
-    filteredItems: []
+    items:
+      - &ref_20
+        title: Server
+        icon: si-centos
+        url: https://lms.inputzero.com/
+        statusCheck: true
+        id: 0_236_server
+      - &ref_21
+        title: Mysql
+        icon: si-mysql
+        url: https://lms.inputzero.com/phpmyadmin/
+        statusCheck: true
+        id: 1_236_mysql
+      - &ref_22
+        title: Cron
+        icon: fas fa-clock
+        statusCheck: true
+        id: 2_236_cron
+      - &ref_23
+        title: Apache
+        icon: si-apache
+        statusCheck: true
+        id: 3_236_apache
+      - &ref_24
+        title: Php
+        icon: si-php
+        statusCheck: true
+        id: 4_236_php
+    filteredItems:
+      - *ref_20
+      - *ref_21
+      - *ref_22
+      - *ref_23
+      - *ref_24
   - name: Fusion
     displayData:
       sortBy: default
@@ -133,8 +261,40 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-    items: []
-    filteredItems: []
+    items:
+      - &ref_25
+        title: Server
+        icon: si-centos
+        url: https://intranet.inputzero.com/fusion_eds/
+        statusCheck: true
+        id: 0_628_server
+      - &ref_26
+        title: Mysql
+        icon: si-mysql
+        url: https://intranet.inputzero.com/phpmyadmin
+        statusCheck: true
+        id: 1_628_mysql
+      - &ref_27
+        title: Cron
+        icon: fas fa-clock
+        statusCheck: true
+        id: 2_628_cron
+      - &ref_28
+        title: Apache
+        icon: si-apache
+        statusCheck: true
+        id: 3_628_apache
+      - &ref_29
+        title: Php
+        icon: si-php
+        statusCheck: true
+        id: 4_628_php
+    filteredItems:
+      - *ref_25
+      - *ref_26
+      - *ref_27
+      - *ref_28
+      - *ref_29
   - displayData:
       sortBy: default
       rows: 1
@@ -149,3 +309,4 @@ sections:
         options:
           hostname: http://idemo.inputzero.com:2812/
           apiVersion: 3
+        id: 0_396_glcurrentcpu
